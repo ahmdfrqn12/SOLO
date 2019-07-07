@@ -1,10 +1,16 @@
 # -*- coding: utf-8 -*-
 
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
+import KIA
+from KIA import *
+from akad.ttypes import *
+from multiprocessing import Pool, Process
+from time import sleep
+import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, wikipedia
+from datetime import timedelta, date
 from datetime import datetime
 from bs4 import BeautifulSoup
-import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib2, wikipedia
+from googletrans import Translator
+import youtube_dl
 
 cl = LINETCR.LINE()
 cl.login(token="EnQtcXF8Da5pdHS5nrbb.X3+sw1N25wpytXm08+7rcW.oHRsR1eKTfwLHbiLTd1pp8K9AUxvQ5y//koUEosxbiA=")
