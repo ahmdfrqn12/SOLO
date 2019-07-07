@@ -12,85 +12,85 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 
-cl = LINETCR.LINE()
+cl = LineClient()
 cl.login(token="EnQtcXF8Da5pdHS5nrbb.X3+sw1N25wpytXm08+7rcW.oHRsR1eKTfwLHbiLTd1pp8K9AUxvQ5y//koUEosxbiA=")
 cl.loginResult()
 
-ki = LINETCR.LINE()
+ki = LineClient()
 ki.login(token="Ent2LGFcmZNDegiuF2R3.C3uxU5NNlVYFHuNw06LZCW.gAs57AujlCOa7HvEgfhCeCWr0PBpne92C+m9lWKdpkU=")
 ki.loginResult()
 
-kk = LINETCR.LINE()
+kk = LineClient()
 kk.login(token="Enmdi6vfIkGD6hiTvLPe.bXgVtu5kSGoBSNRPtLnC+G.IeOT15L4PCHn579Ykzc7Z3GzeKehB7lgdS6c4UIdr1M=")
 kk.loginResult()
 
-kc = LINETCR.LINE()
+kc = LineClient()
 kc.login(token="EnVcjCFfspx2Lh5hc4q5.PT0fO6oRxm3RJkmvumHfXq.s/QmelfyO1zlUv0pMDuK0zhMGDm46ZEzyGJV2keca1U=")
 kc.loginResult()
 
-kd = LINETCR.LINE()
+kd = LineClient()
 kd.login(token="EnpZRgxumPNViyZAjuYc.SH8QKeJASCCT21I1OyjN+a.Qq/8ORJsiQUb+grqiWXsD2szHnhZrK7HLUxyK9syP10=")
 kd.loginResult()
 
-ke = LINETCR.LINE()
+ke = LineClient()
 ke.login(token="EnzrBO5iowNMcODTNtm5.Q0OoFYJHaR1Q19cGwwRPHq.DXk28gYLX3GYT4oh//BHWYo9++4Be/4iw/x7MqsOzR0=")
 ke.loginResult()
 
-kf = LINETCR.LINE()
+kf = LineClient()
 kf.login(token="En1FYtLsqoZFZYFdVTnc.IXqIA67Yp2TOiNIPBdv0la.HD0dzNcX5rfoI7qm6EwlCi88zbim+nSKyxo9w0omhQE=")
 kf.loginResult()
 
-kg = LINETCR.LINE()
+kg = LineClient()
 kg.login(token="Enx3b3R1eF4vJXzdgUH4.7UpnrSpbBLku34NMQquZja.x4YxKzrZJTYGjSGdwvJsXXLrlEMf7dinJfx3jLjKDx0=")
 kg.loginResult()
 
-kh = LINETCR.LINE()
+kh = LineClient()
 kh.login(token="EnCTNh4MU3Y9lUCy39rf.VhUBCNkLBNBEY+aAw6H0ZW.LpKAP5EFi4Tk46FilKnathQMY6QMsDHd+fIyAMEjVuQ=")
 kh.loginResult()
 
-kj = LINETCR.LINE()
+kj = LineClient()
 kj.login(token="EnEAedLdibLoONaMGnK6.Zg2BQYNPKl2ksz44ZIytHG.DN8ar+4Il2MgVoaQ2Z53eFn3uUIEhk3iiPEpbwWPfBk=")
 kj.loginResult()
 
-kl = LINETCR.LINE()
+kl = LineClient()
 kl.login(token="EnutRFKDWhrhTfkmXbo6.lEc1JaEVsI3l5xpWt5mAnG.x3HmElMPxHJz4X7H3hYa8KqEoaiNFIeDfFdRAGtP91Q=")
 kl.loginResult()
 
-km = LINETCR.LINE()
+km = LineClient()
 km.login(token="EnVpepsOV5mXyKu0QfZ6.muq18IWfKt5SEgFXA9fxfG.g0jDSEPT2yonBE4Xr9Ois1Se98T1Wyc7Xmt6l3Qf+CY=")
 km.loginResult()
 
-kn = LINETCR.LINE()
+kn = LineClient()
 kn.login(token="EncsNNIon04D5fsfBLK7./hD97gr5Xe1yxI05XUWpLW.DS9b4TgUIkCkYuRyCHpR3WYlbk7BQYMeJQFgwbyM9kg=")
 kn.loginResult()
 
-ko = LINETCR.LINE()
+ko = LineClient()
 ko.login(token="EnZbJaYLpeju4gDp6p16.jNAlelBFImiLiQ74z7TQLG.oJ9MFipwshDCwjRTuo4YiP62dvhK4seLO5eswqiok2A=")
 ko.loginResult()
 
-kp = LINETCR.LINE()
+kp = LineClient()
 kp.login(token="EnLP2RWQwCI5pQiys4E6.JshQn3mNrRt2A6dgNKEFjG.KwxHyEsfNCb1QIj+M/jTMBYuZNgTE7j43498PgkGDq8=")
 kp.loginResult()
 
-kq = LINETCR.LINE()
+kq = LineClient()
 kq.login(token="EnXAAKwYb7Ypf4msjkIa.O5l+/QmuY6G/wgyx2fh9EG.cK7F5BNAtPBsyNLeJaMEofAxa/PBZINbLUMrYML5BKM=")
 kq.loginResult()
 
-kr = LINETCR.LINE()
+kr = LineClient()
 kr.login(token="En30RAuEqV3Of0ffNFk7.EOr9BRGLhQ4vTNqpFe1hfW.oCAUGCHiDramWgJlkcdU3tTJODRJEB10Sq4/LXOo7Ec=")
 kr.loginResult()
 
-ks = LINETCR.LINE()
+ks = LineClient()
 ks.login(token="Enet1M8ZA9Khg7DMeoN5.L1HeXTaxon2Sz1CLgvtfzq.lqwb5ibFWDEIqlis6gNOihSL9fLljv2MR6wYCxOQeMk=")
 ks.loginResult()
 
-kt = LINETCR.LINE()
+kt = LineClient()
 kt.login(token="Eng8t5wROkreLDTDSfR1.Rp5lRKgcZmlY4wRBeDTpaq.hq5XIi1r1qffuANiD7WmnMiHYKcZ5+5GZSTwOiZPruY=")
 kt.loginResult()
 
 print "Bii Bot"
-reload(sys)
-sys.setdefaultencoding('utf-8')
+poll = LinePoll(cl)
+call = cl
 helpMessage ="""
 
 Command For Bii
@@ -392,173 +392,141 @@ backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 
 
-def upload_tempimage(client):
-     '''
-         Upload a picture of a kitten. We don't ship one, so get creative!
-     '''
-     config = {
-         'album': album,
-         'name':  'bot auto upload',
-         'title': 'bot auto upload',
-         'description': 'bot auto upload'
-     }
+def restart_program(): 
+    python = sys.executable
+    os.execl(python, python, * sys.argv)
 
-     print("Uploading image... ")
-     image = client.upload_from_path(image_path, config=config, anon=False)
-     print("Done")
-     print()
+def restartBot():
+    python = sys.executable
+    os.execl(python, python, *sys.argv)
 
-def yt(query):
-    with requests.session() as s:
-         isi = []
-         if query == "":
-             query = "S1B tanysyz"   
-         s.headers['user-agent'] = 'Mozilla/5.0'
-         url    = 'http://www.youtube.com/results'
-         params = {'search_query': query}
-         r    = s.get(url, params=params)
-         soup = BeautifulSoup(r.content, 'html5lib')
-         for a in soup.select('.yt-lockup-title > a[title]'):
-            if '&list=' not in a['href']:
-                if 'watch?v' in a['href']:
-                    b = a['href'].replace('watch?v=', '')
-                    isi += ['youtu.be' + b]
-         return isi
+def waktu(secs):
+    mins, secs = divmod(secs,60)
+    hours, mins = divmod(mins,60)
+    days, hours = divmod(hours, 24)
+    return '%02d Hari %02d Jam %02d Menit %02d Detik' % (days, hours, mins, secs)
 
-def sendMessage(to, text, contentMetadata={}, contentType=0):
-    mes = Message()
-    mes.to, mes.from_ = to, profile.mid
-    mes.text = text
-    mes.contentType, mes.contentMetadata = contentType, contentMetadata
-    if to not in messageReq:
-        messageReq[to] = -1
-    messageReq[to] += 1
+def runtime(secs):
+    mins, secs = divmod(secs,60)
+    hours, mins = divmod(mins,60)
+    days, hours = divmod(hours, 24)
+    return '%02d Hari %02d Jam %02d Menit %02d Detik' % (days, hours, mins, secs)
 
-def mention(to, nama):
-	aa = ""
-	bb = ""
-	strt = int(0)
-	akh = int(0)
-	nm = nama
-	print nm
-	for mm in nm:
-		akh = akh + 3
-		aa += """{"S":"""+json.dumps(str(strt))+""","E":"""+json.dumps(str(akh))+""","M","""+json.dumps(mm)+"),"""
-		strt = strt + 4
-		akh = akh + 1
-		bb += "@x \n"
-	aa = (aa[:int(len(aa)-1)])
-	msg = Message()
-	msg.to = to
-	msg.from_ = admin
-	msg.text = bb
-	msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+aa+']}','EMTVER':'4'}
-	print msg
-	try:
-		cl.sendMessage(msg)
-	except Exception as error:
-		print error
-
-def sendMessage(self, messageObject):
-        return self.Talk.client.sendMessage(0,messageObject)
-
-def sendText(self, Tomid, text):
-        msg = Message()
-        msg.to = Tomid
-        msg.text = text
-
-        return self.Talk.client.sendMessage(0, msg)
-def sendImage(self, to_, path):
-        M = Message(to=to_,contentType = 1)
-        M.contentMetadata = None
-        M.contentPreview = None
-        M_id = self._client.sendMessage(M).id
-        files = {
-            'file': open(path, 'rb'),
-        }
-        params = {
-            'name': 'media',
-            'oid': M_id,
-            'size': len(open(path, 'rb').read()),
-            'type': 'image',
-            'ver': '1.0',
-        }
-        data = {
-            'params': json.dumps(params)
-        }
-        r = self._client.post_content('https://os.line.naver.jp/talk/m/upload.nhn', data=data, files=files)
-        if r.status_code != 201:
-            raise Exception('Upload image failure.')
-        #r.content
-        return True
-
-def sendImageWithURL(self, to_, url):
-      path = '%s/pythonLine-%i.data' % (tempfile.gettempdir(), randint(0, 9))
-      r = requests.get(url, stream=True)
-      if r.status_code == 200:
-         with open(path, 'w') as f:
-            shutil.copyfileobj(r.raw, f)
-      else:
-         raise Exception('Download image failure.')
-      try:
-         self.sendImage(to_, path)
-      except Exception as e:
-         raise e
- 
-def post_content(self, urls, data=None, files=None):
-        return self._session.post(urls, headers=self._headers, data=data, files=files)
-def sendMessage(to, text, contentMetadata={}, contentType=0):
-    mes = Message()
-    mes.to, mes.from_ = to, profile.mid
-    mes.text = text
-    mes.contentType, mes.contentMetadata = contentType, contentMetadata
-    if to not in messageReq:
-        messageReq[to] = -1
-    messageReq[to] += 1
-
-def sendMessage(to, text, contentMetadata={}, contentType=0):
-    mes = Message()
-    mes.to, mes.from_ = to, profile.mid
-    mes.text = text
-    mes.contentType, mes.contentMetadata = contentType, contentMetadata
-    if to not in messageReq:
-        messageReq[to] = -1
-    messageReq[to] += 1
-def NOTIFIED_READ_MESSAGE(op):
-    print op
+def mentionMembers(to, mid):
     try:
-        if op.param1 in wait2['readPoint']:
-            Name = cl.getContact(op.param2).displayName
-            if Name in wait2['readMember'][op.param1]:
-                pass
+        arrData = ""
+        textx = "DAFTAR JONESã€Œ{}ã€\n\n  [ Silahkan pilih ]\n1. ".format(str(len(mid)))
+        arr = []
+        no = 1
+        num = 2
+        for i in mid:
+            mention = "@x\n"
+            slen = str(len(textx))
+            elen = str(len(textx) + len(mention) - 1)
+            arrData = {'S':slen, 'E':elen, 'M':i}
+            arr.append(arrData)
+            textx += mention
+            if no < len(mid):
+                no += 1
+                textx += "%i. " % (num)
+                num=(num+1)
             else:
-                wait2['readMember'][op.param1] += "\n・" + Name + datetime.now().strftime(' [%d - %H:%M:%S]')
-                wait2['ROM'][op.param1][op.param2] = "・" + Name + " ツ"
-        else:
-            pass
-    except:
-        pass
-def RECEIVE_MESSAGE(op):
-    msg = op.message
-    try:
-        if msg.contentType == 0:
-            try:
-                if msg.to in wait2['readPoint']:
-                    if msg.from_ in wait2["ROM"][msg.to]:
-                        del wait2["ROM"][msg.to][msg.from_]
-                else:
-                    pass
-            except:
-                pass
-        else:
-            pass
-          
-    except KeyboardInterrupt:
-				sys.exit(0)
+                try:
+                    no = "\nâ•šâ•â•[ {} ]".format(str(cl.getGroup(to).name))
+                except:
+                    no = "\nâ•šâ•â•[ Success ]"
+        cl.sendMessage(to, textx, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
     except Exception as error:
-        print error
-        print ("\n\nRECEIVE_MESSAGE\n\n")
-        return
+        cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
+
+def siderMembers(to, mid):
+    try:
+        arrData = ""
+        textx = "Hallo ".format(str(len(mid)))
+        arr = []
+        no = 1
+        num = 2
+        for i in mid:
+            mention = "@x\n"
+            slen = str(len(textx))
+            elen = str(len(textx) + len(mention) - 1)
+            arrData = {'S':slen, 'E':elen, 'M':i}
+            arr.append(arrData)
+            textx += mention+wait["mention"]
+            if no < len(mid):
+                no += 1
+                textx += "%i. " % (num)
+                num=(num+1)
+            else:
+                try:
+                    no = "\nâ•šâ•â•[ {} ]".format(str(cl.getGroup(to).name))
+                except:
+                    no = "\nâ•šâ•â•[ Success ]"
+        cl.sendMessage(to, textx, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
+    except Exception as error:
+        cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
+
+def welcomeMembers(to, mid):
+    try:
+        arrData = ""
+        textx = "Hallo  ".format(str(len(mid)))
+        arr = []
+        no = 1
+        num = 2
+        for i in mid:
+            ginfo = cl.getGroup(to)
+            mention = "@x\n"
+            slen = str(len(textx))
+            elen = str(len(textx) + len(mention) - 1)
+            arrData = {'S':slen, 'E':elen, 'M':i}
+            arr.append(arrData)
+            textx += mention+wait["welcome"]+"\nNama grup : "+str(ginfo.name)
+            if no < len(mid):
+                no += 1
+                textx += "%i " % (num)
+                num=(num+1)
+            else:
+                try:
+                    no = "\nâ•šâ•â•[ {} ]".format(str(cl.getGroup(to).name))
+                except:
+                    no = "\nâ•šâ•â•[ Success ]"
+        cl.sendMessage(to, textx, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
+    except Exception as error:
+        cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
+
+def sendMention(to, mid, firstmessage):
+    try:
+        arrData = ""
+        text = "%s " %(str(firstmessage))
+        arr = []
+        mention = "@x \n"
+        slen = str(len(text))
+        elen = str(len(text) + len(mention) - 1)
+        arrData = {'S':slen, 'E':elen, 'M':mid}
+        arr.append(arrData)
+        today = datetime.today()
+        future = datetime(2018,3,1)
+        hari = (str(future - today))
+        comma = hari.find(",")
+        hari = hari[:comma]
+        teman = cl.getAllContactIds()
+        gid = cl.getGroupIdsJoined()
+        tz = pytz.timezone("Asia/Jakarta")
+        timeNow = datetime.now(tz=tz)
+        eltime = time.time() - mulai
+        bot = runtime(eltime)
+        text += mention+"â— Jam : "+datetime.strftime(timeNow,'%H:%M:%S')+" Wib\nâ— Group : "+str(len(gid))+"\nâ— Teman : "+str(len(teman))+"\nâ— Expired : In "+hari+"\nâ— Version : MAX v10\nâ— Tanggal : "+datetime.strftime(timeNow,'%Y-%m-%d')+"\nâ— Runtime : \n â€¢ "+bot
+        cl.sendMessage(to, text, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
+    except Exception as error:
+        cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
+
+def command(text):
+    pesan = text.lower()
+    if pesan.startswith(Setmain["keyCommand"]):
+        cmd = pesan.replace(Setmain["keyCommand"],"")
+    else:
+        cmd = "command"
+    return cmd
 def bot(op):
     try:
         if op.type == 0:
