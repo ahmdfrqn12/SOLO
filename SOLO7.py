@@ -997,7 +997,40 @@ def bot(op):
                         kj.acceptGroupInvitation(op.param1)
                         ginfo = kj.getGroup(op.param1)
                         kj.sendMessage(op.param1,"Hai " + str(ginfo.name))
-
+                       
+        if op.type == 13:
+            if op.param1 in protectinvite:
+                if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
+                    wait["blacklist"][op.param2] = True
+                    try:
+                        group = kn.getGroup(op.param1)
+                        gMembMids = [contact.mid for contact in group.invitee]
+                        for _mid in gMembMids:
+                            kn.cancelGroupInvitation(op.param1,[_mid])
+                            kn.kickoutFromGroup(op.param1,[op.param2])
+                    except:
+                        try:
+                            group = ko.getGroup(op.param1)
+                            gMembMids = [contact.mid for contact in group.invitee]
+                            for _mid in gMembMids:
+                                ko.cancelGroupInvitation(op.param1,[_mid])
+                                ko.kickoutFromGroup(op.param1,[op.param2])
+                        except:
+                            try:
+                                group = kw.getGroup(op.param1)
+                                gMembMids = [contact.mid for contact in group.invitee]
+                                for _mid in gMembMids:
+                                    km.cancelGroupInvitation(op.param1,[_mid])
+                                    km.kickoutFromGroup(op.param1,[op.param2])
+                            except:
+                                try:
+                                    group = ke.getGroup(op.param1)
+                                    gMembMids = [contact.mid for contact in group.invitee]
+                                    for _mid in gMembMids:
+                                        ke.cancelGroupInvitation(op.param1,[_mid])
+                                        ke.kickoutFromGroup(op.param1,[op.param2])
+                                except:
+                                    pass
 		if op.type == 13:
             if wait["pinvite"] == True:
                 if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
