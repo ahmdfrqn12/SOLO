@@ -777,9 +777,10 @@ def bot(op):
     try:
         if op.type == 0:
             return
-            
+        
         if op.type == 11:
             if wait["qr"] == True:
+                wait["blacklist"][op.param2] = True
                 try:
                     if cl.getGroup(op.param1).preventedJoinByTicket == False:
                         if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
@@ -805,54 +806,63 @@ def bot(op):
                                 ka.updateGroup(X)
                     except:
                         try:
-                    	    if kb.getGroup(op.param1).preventedJoinByTicket == False:
+                            if kb.getGroup(op.param1).preventedJoinByTicket == False:
                                 if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                                     kb.reissueGroupTicket(op.param1)
                                     X = kb.getGroup(op.param1)
-                            		X.preventedJoinByTicket = True
-                            		Ticket = kb.reissueGroupTicket(op.param1)
-                            		sw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                            		sw.kickoutFromGroup(op.param1,[op.param2])
-                            		sw.leaveGroup(op.param1)
-                            		kb.updateGroup(X)
+                                    X.preventedJoinByTicket = True
+                                    Ticket = kb.reissueGroupTicket(op.param1)
+                                    sw.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    sw.kickoutFromGroup(op.param1,[op.param2])
+                                    sw.leaveGroup(op.param1)
+                                    kb.updateGroup(X)
                         except:
                             try:
-                            	if kc.getGroup(op.param1).preventedJoinByTicket == False:
+                                if kc.getGroup(op.param1).preventedJoinByTicket == False:
                                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                                         kc.reissueGroupTicket(op.param1)
-                                    	X = kc.getGroup(op.param1)
-                            			X.preventedJoinByTicket = True
-                            			Ticket = kc.reissueGroupTicket(op.param1)
-                            			sw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                            			sw.kickoutFromGroup(op.param1,[op.param2])
-                            			sw.leaveGroup(op.param1)
-                            			kc.updateGroup(X)
-                        	except:
-                            	try:
-                            	    if kd.getGroup(op.param1).preventedJoinByTicket == False:
+                                        X = kc.getGroup(op.param1)
+                                        X.preventedJoinByTicket = True
+                                        Ticket = kc.reissueGroupTicket(op.param1)
+                                        sw.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                        sw.kickoutFromGroup(op.param1,[op.param2])
+                                        sw.leaveGroup(op.param1)
+                                        kc.updateGroup(X)
+                            except:
+                                try:
+                                    if km.getGroup(op.param1).preventedJoinByTicket == False:
                                         if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                                    		kd.reissueGroupTicket(op.param1)
-                           			 	X = kd.getGroup(op.param1)
-                            				X.preventedJoinByTicket = True
-                            				Ticket = kd.reissueGroupTicket(op.param1)
-                            				sw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                            				sw.kickoutFromGroup(op.param1,[op.param2])
-                            				sw.leaveGroup(op.param1)
-                            				kd.updateGroup(X)
+                                            km.reissueGroupTicket(op.param1)
+                                            X = km.getGroup(op.param1)
+                                            X.preventedJoinByTicket = True
+                                            Ticket = km.reissueGroupTicket(op.param1)
+                                            sw.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                            sw.kickoutFromGroup(op.param1,[op.param2])
+                                            km.updateGroup(X)
                                 except:
                                     try:
-                                    	if cl.getGroup(op.param1).preventedJoinByTicket == False:
+                                        if kn.getGroup(op.param1).preventedJoinByTicket == False:
                                             if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                                        	random.choice(ABC).reissueGroupTicket(op.param1)
-                                    		X = kc.getGroup(op.param1)
-                            				X.preventedJoinByTicket = True
-                            				Ticket = random.choice(ABC).reissueGroupTicket(op.param1)
-                            				sw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                            				sw.kickoutFromGroup(op.param1,[op.param2])
-                            				sw.leaveGroup(op.param1)
-                            				cl.updateGroup(X)
-                        		except:
-                            		pass
+                                                kn.reissueGroupTicket(op.param1)
+                                                X = kn.getGroup(op.param1)
+                                                X.preventedJoinByTicket = True
+                                                Ticket = kn.reissueGroupTicket(op.param1)
+                                                sw.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                                sw.kickoutFromGroup(op.param1,[op.param2])
+                                                kn.updateGroup(X)
+                                    except:
+                                        try:
+                                            if kj.getGroup(op.param1).preventedJoinByTicket == False:
+                                                if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
+                                                    kj.reissueGroupTicket(op.param1)
+                                                    X = kj.getGroup(op.param1)
+                                                    X.preventedJoinByTicket = True
+                                                    Ticket = kj.reissueGroupTicket(op.param1)
+                                                    sw.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                                    sw.kickoutFromGroup(op.param1,[op.param2])
+                                                    kj.updateGroup(X)
+                                        except:
+                                            pass
         if op.type == 13:
             if mid in op.param3:
                 if wait["autoLeave"] == True:
@@ -872,201 +882,121 @@ def bot(op):
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
-                        #cl.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        cl.sendMessage(op.param1,"Haii " +str(ginfo.name))
                     else:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
-                        #cl.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Amid in op.param3:
+                        cl.sendMessage(op.param1,"Haii " + str(ginfo.name))
+            if Amid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         ka.acceptGroupInvitation(op.param1)
                         ginfo = ka.getGroup(op.param1)
-                        #kb.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        ka.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        ka.leaveGroup(op.param1)
                     else:
                         ka.acceptGroupInvitation(op.param1)
                         ginfo = ka.getGroup(op.param1)
-                        #ka.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Bmid in op.param3:
+                        ka.sendMessage(op.param1,"Hai " + str(ginfo.name))
+            if Bmid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         kb.acceptGroupInvitation(op.param1)
                         ginfo = kb.getGroup(op.param1)
-                        #kb.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        kb.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        kb.leaveGroup(op.param1)
                     else:
                         kb.acceptGroupInvitation(op.param1)
                         ginfo = kb.getGroup(op.param1)
-                        #kb.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Cmid in op.param3:
+                        kb.sendMessage(op.param1,"Hai " + str(ginfo.name))
+            if Cmid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         kc.acceptGroupInvitation(op.param1)
                         ginfo = kc.getGroup(op.param1)
-                        #kc.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        kc.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        kc.leaveGroup(op.param1)
                     else:
                         kc.acceptGroupInvitation(op.param1)
                         ginfo = kc.getGroup(op.param1)
-                        #kc.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Dmid in op.param3:
+                        kc.sendMessage(op.param1,"Hai " + str(ginfo.name))
+            if Dmid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         kd.acceptGroupInvitation(op.param1)
                         ginfo = kd.getGroup(op.param1)
-                        #kd.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        kd.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        kd.leaveGroup(op.param1)
                     else:
                         kd.acceptGroupInvitation(op.param1)
                         ginfo = kd.getGroup(op.param1)
-                        #kd.sendMessage(op.param1,"Haii " + str(ginfo.name))
-		    if Emid in op.param3:
+                        kd.sendMessage(op.param1,"Hai " + str(ginfo.name))
+            if Emid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         ke.acceptGroupInvitation(op.param1)
                         ginfo = ke.getGroup(op.param1)
-                        #ke.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        ke.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        ke.leaveGroup(op.param1)
                     else:
                         ke.acceptGroupInvitation(op.param1)
                         ginfo = ke.getGroup(op.param1)
-                        #ke.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Fmid in op.param3:
+                        ke.sendMessage(op.param1,"Hai " + str(ginfo.name))
+            if Fmid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         kf.acceptGroupInvitation(op.param1)
                         ginfo = kf.getGroup(op.param1)
-                        #kf.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        kf.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        kf.leaveGroup(op.param1)
                     else:
                         kf.acceptGroupInvitation(op.param1)
                         ginfo = kf.getGroup(op.param1)
-                        #kf.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Gmid in op.param3:
+                        kf.sendMessage(op.param1,"Hai " + str(ginfo.name))
+            if Gmid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         kg.acceptGroupInvitation(op.param1)
                         ginfo = kg.getGroup(op.param1)
-                        #kg.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        kg.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        kg.leaveGroup(op.param1)
                     else:
                         kg.acceptGroupInvitation(op.param1)
                         ginfo = kg.getGroup(op.param1)
-                        #kg.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Hmid in op.param3:
+                        kg.sendMessage(op.param1,"Hai " + str(ginfo.name))
+            if Hmid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         kh.acceptGroupInvitation(op.param1)
                         ginfo = kh.getGroup(op.param1)
-                        #kh.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        kh.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        kh.leaveGroup(op.param1)
                     else:
                         kh.acceptGroupInvitation(op.param1)
                         ginfo = kh.getGroup(op.param1)
-                        #kh.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Imid in op.param3:
+                        kh.sendMessage(op.param1,"Hai " + str(ginfo.name))
+            if Imid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         ki.acceptGroupInvitation(op.param1)
                         ginfo = ki.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        ki.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        ki.leaveGroup(op.param1)
                     else:
                         ki.acceptGroupInvitation(op.param1)
                         ginfo = ki.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Jmid in op.param3:
+                        ki.sendMessage(op.param1,"Hai " + str(ginfo.name))
+            if Jmid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         kj.acceptGroupInvitation(op.param1)
                         ginfo = kj.getGroup(op.param1)
-                        #kj.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        kj.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        kj.leaveGroup(op.param1)
                     else:
                         kj.acceptGroupInvitation(op.param1)
                         ginfo = kj.getGroup(op.param1)
-                        #kj.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Kmid in op.param3:
-                if wait["autoJoin"] == True:
-                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                        kk.acceptGroupInvitation(op.param1)
-                        ginfo = kk.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " +str(ginfo.name))
-                    else:
-                        kk.acceptGroupInvitation(op.param1)
-                        ginfo = kk.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Lmid in op.param3:
-                if wait["autoJoin"] == True:
-                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                        kl.acceptGroupInvitation(op.param1)
-                        ginfo = kl.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " +str(ginfo.name))
-                    else:
-                        kl.acceptGroupInvitation(op.param1)
-                        ginfo = kl.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Mmid in op.param3:
-                if wait["autoJoin"] == True:
-                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                        km.acceptGroupInvitation(op.param1)
-                        ginfo = km.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " +str(ginfo.name))
-                    else:
-                        km.acceptGroupInvitation(op.param1)
-                        ginfo = km.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Nmid in op.param3:
-                if wait["autoJoin"] == True:
-                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                        kn.acceptGroupInvitation(op.param1)
-                        ginfo = kn.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " +str(ginfo.name))
-                    else:
-                        kn.acceptGroupInvitation(op.param1)
-                        ginfo = kn.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Omid in op.param3:
-                if wait["autoJoin"] == True:
-                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                        ko.acceptGroupInvitation(op.param1)
-                        ginfo = ko.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " +str(ginfo.name))
-                    else:
-                        ko.acceptGroupInvitation(op.param1)
-                        ginfo = ko.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Pmid in op.param3:
-                if wait["autoJoin"] == True:
-                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                        kp.acceptGroupInvitation(op.param1)
-                        ginfo = kp.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " +str(ginfo.name))
-                    else:
-                        kp.acceptGroupInvitation(op.param1)
-                        ginfo = kp.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Qmid in op.param3:
-                if wait["autoJoin"] == True:
-                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                        kq.acceptGroupInvitation(op.param1)
-                        ginfo = kq.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " +str(ginfo.name))
-                    else:
-                        kq.acceptGroupInvitation(op.param1)
-                        ginfo = kq.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Rmid in op.param3:
-                if wait["autoJoin"] == True:
-                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                        kr.acceptGroupInvitation(op.param1)
-                        ginfo = kr.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " +str(ginfo.name))
-                    else:
-                        kr.acceptGroupInvitation(op.param1)
-                        ginfo = kr.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " + str(ginfo.name))
-			if Smid in op.param3:
-                if wait["autoJoin"] == True:
-                    if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                        ks.acceptGroupInvitation(op.param1)
-                        ginfo = ks.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " +str(ginfo.name))
-                    else:
-                        ks.acceptGroupInvitation(op.param1)
-                        ginfo = ks.getGroup(op.param1)
-                        #ki.sendMessage(op.param1,"Haii " + str(ginfo.name))
+                        kj.sendMessage(op.param1,"Hai " + str(ginfo.name))
 
 		if op.type == 13:
             if wait["pinvite"] == True:
